@@ -8,11 +8,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/white87332/react-redux-immutable.git"
+    "url": "https://github.com/white87332/react-immutable-redux.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/white87332/react-redux-immutable/issues"
+    "url": "https://github.com/white87332/react-immutable-redux/issues"
   },
   "keywords": [
     "react",
