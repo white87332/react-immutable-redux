@@ -20,6 +20,7 @@ const routes = (
 	<Router history={browserHistory}>
 		<Route getComponent={loadConmponentAsync(require('bundle?lazy&name=layout!../components/layout/layout'))}>
 			<Route path= "/counter" getComponent={loadConmponentAsync(require('bundle?lazy&name=counter!../components/counter/counter'))} />
+			<Route path= "/todo" getComponent={loadConmponentAsync(require('bundle?lazy&name=todo!../components/todo/todo'))} />
 		</Route>
     </Router>
 );
