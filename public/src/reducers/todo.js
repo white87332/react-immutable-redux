@@ -1,4 +1,5 @@
 import Immutable from 'immutable';
+import { LOCATION_CHANGE } from 'react-router-redux';
 import * as types from '../constants/actionTypes';
 
 const initialState = Immutable.fromJS({
@@ -9,6 +10,11 @@ export default function todo(state = initialState, action = {})
 {
     switch (action.type)
     {
+        case LOCATION_CHANGE:
+            return state.merge({
+                locationBeforeTransitions: action.payload
+            });
+
         // TODO_ADD
         case types.TODO_ADD:
             return state.set('data', state.get('data').push(Immutable.Map({
