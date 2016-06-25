@@ -1,7 +1,7 @@
 import { INCREMENT_COUNTER, DECREMENT_COUNTER } from '../actions/counter';
-import Immutable from 'immutable';
+import { fromJS } from 'immutable';
 
-const initialState = Immutable.fromJS({
+const initialState = fromJS({
     'numbers': 0
 });
 
