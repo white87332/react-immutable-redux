@@ -1,6 +1,6 @@
-import Immutable from 'immutable';
+import { fromJS } from 'immutable';
 
-const initialState = Immutable.fromJS({});
+const initialState = fromJS({});
 
 export default function header(state = initialState, action = {})
 {

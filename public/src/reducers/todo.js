@@ -1,4 +1,4 @@
-import { fromJS } from 'immutable';
+import { fromJS, Map } from 'immutable';
 import * as types from '../constants/actionTypes';
 
 const initialState = fromJS({
@@ -11,7 +11,7 @@ export default function todo(state = initialState, action = {})
     {
         // TODO_ADD
         case types.TODO_ADD:
-            return state.set('data', state.get('data').push(Immutable.Map({
+            return state.set('data', state.get('data').push(Map({
                 id: new Date()/1,
                 name: action.data
             })));

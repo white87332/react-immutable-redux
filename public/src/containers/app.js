@@ -5,10 +5,10 @@ import { Provider } from 'react-redux';
 import configureStore from '../store/configureStore.js';
 import createRoutes from '../routes/routes';
 import { syncHistoryWithStore } from 'react-router-redux';
-import Immutable from 'immutable';
+import { Map } from 'immutable';
 
 // store
-const store = configureStore(Immutable.Map({}));
+const store = configureStore(Map({}));
 
 // react-router-redux
 const history = syncHistoryWithStore(browserHistory, store,

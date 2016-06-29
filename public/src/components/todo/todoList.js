@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import Immutable from 'immutable';
+import { is } from 'immutable';
 
 class TodoList extends Component
 {
     shouldComponentUpdate(nextProps, nextState)
     {
-        return (Immutable.is(this.props.data, nextProps.data))? false : true;
+        return (is(this.props.data, nextProps.data))? false : true;
     }
 
     update()
