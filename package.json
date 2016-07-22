@@ -21,6 +21,8 @@
   ],
   "homepage": "",
   "dependencies": {
+    "babel-core": "^6.11.4",
+    "gulp-imagemin": "^3.0.2",
     "immutable": "^3.8.1",
     "normalize.css": "^4.2.0",
     "react": "^15.2.1",
