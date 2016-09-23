@@ -42,7 +42,7 @@ module.exports = {
             loaders: [
                 "style",
                 "css",
-                "sass",
+                "sass?outputStyle=compressed",
                 "postcss"
             ]
         },
